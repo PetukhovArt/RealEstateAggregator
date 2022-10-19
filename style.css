@@ -6,217 +6,129 @@ html {
   box-sizing: border-box;
 }
 
+html,
 body {
-  min-height: 100vh;
+  height: 100%;
+}
+
+body {
   margin: 0;
   padding: 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
   font-family: 'Montserrat', sans-serif;
+  color: white;
   font-size: 18px;
   font-weight: 500;
   line-height: 1.5;
   letter-spacing: 0.5px;
-  min-width: 320px;
+  background-image: url(/assets/img/bg.jpeg);
+  background-size: cover;
+  position: relative;
+}
+
+.wrapper {
+  background: rgba(0, 11, 49, 0.8);
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  display: grid;
+  grid-template-rows: 20% 80%; /* 2 ряда для хедер и мейн */
 }
 
 .header {
-  background-color: rgb(219, 229, 233);
+  display:grid;
+  grid-template-columns: auto auto auto auto auto auto auto auto;
 
 }
 
-.container {
-  max-width: 1440px;
-  margin: 0 auto;
-  min-height: 50px;
+.logo {
+grid-column: 2/4;
+display: flex;
+align-items: center;
 }
 
-.main-container {
-  display: flex;
-  flex-wrap: wrap;
+.nav {
+grid-column: 4/8;
+display: flex;
+align-items: center;
+justify-content: flex-end;
 }
 
-.nav-item {
-  padding: 10px 0;
-  transition: all 0.5s;
-}
-
-.nav-item:hover {
-  background-color: rgb(255, 255, 255);
+.header-logo {
+height: 100px;
+width: 150px;
 }
 
 .nav-list {
   display: flex;
-  justify-content: center;
-  align-items: center;
   list-style: none;
-  flex-wrap: wrap;
-  margin: 0;
+}
+
+.nav-item {
+padding: 10px;
 }
 
 .nav-link {
-  padding: 0 20px;
-  line-height: 50px;
+  padding: 10px;
   text-shadow: 10px;
-  transition: .3s;
-  font-weight: 700;
-}
-
-.exp-link {
-  text-shadow: 10px;
-  transition: .3s;
-  font-weight: 600;
-}
-
-a {
-  color: #ba9b00;
+  font-weight: 500;
+  text-transform: uppercase;
   text-decoration: none;
-  transition: color 0.3s;
+  color: white;
 }
 
-a:hover {
-  color: #70bdfc;
+.nav-link:hover {
+background-color: #5b2bfa;
+border-radius: 10px;
+transition: 0.5s;
 }
 
-.code {
-  font-size: 18px;
-  font-family: monospace;
-  background-color: #eef4ff;
-  padding-left: 20px;
-  height: 140px;
-}
-
-.section {
-  width: 50%;
-  padding: 20px;
-  border-bottom: 1px solid #3f52fc;
-}
-
-.section-languages {
-  border-bottom: 0;
-}
-
-.section-courses {
-  border-bottom: 0;
-}
-
-@media (max-width: 768px) {
-
-  /*if width 768px = section takes all screen*/
-  .section {
-    width: 100%;
-  }
-}
-
-.section-title {
-  /*titles styles*/
-  font-size: 20px;
-  font-weight: 600;
-  text-transform: uppercase;
-  letter-spacing: 4px;
-  color: #000000;
-  padding: 0px 20px;
-}
-
-.section-list {
-  margin: 0;
-  padding: 0;
-  list-style: none;
-}
-
-.section-item {
-  position: relative;
-  padding-left: 25px;
-}
-
-.section-item::before {
-  content: "";
-  position: absolute;
-  top: 8px;
-  left: 0px;
-  width: 10px;
-  height: 10px;
-  border: 1px solid #000ed8;
-  border-radius: 50%;
-}
-
-.section-profile {
-  display: flex;
-  justify-content: space-around;
-  width: 100%;
-  padding: 50px 30px 35px;
-  border-bottom: 13px solid #003597;
-  flex-wrap: wrap;
-}
-
-.section-profile-logo {
-  width: 200px;
-  height: 200px;
-  object-fit: cover;
-  border-radius: 50%;
-}
-
-.main-title {
-  position: relative;
-  padding: 0;
-  margin-bottom: 20px;
-  color: #00347d;
-  font-size: 32px;
-  font-weight: 300;
-  letter-spacing: 10px;
-  line-height: 50px;
-  word-spacing: 3px;
-}
-
-.section-subtitle {
-  margin-top: 20px;
-  color: #70bdfc;
-  line-height: 50px;
-  font-weight: 300;
-  letter-spacing: 2px;
-  text-align: center;
-}
-
-.section-profile-title {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  align-content: center;
-  text-align: center;
-  text-transform: uppercase;
+.container {
+display: grid;
+grid-template-rows: 20% auto 70%;
+justify-content: center;<-- под вопросом -->
 }
 
 p {
-  display: block;
   margin-block-start: 1em;
   margin-block-end: 1em;
   margin-inline-start: 0px;
   margin-inline-end: 0px;
+  color: white;
 }
 
-.footer-container {
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  margin: 0 auto;
-  background-color: rgb(219, 229, 233);
+h1, h2, h3, h4, h5 {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 1.6em;
+  text-align: center;
+}
+
+h4 {
+  font-size: 18px !important;
+  font-weight: 300;
+  text-align: center;
 }
 
 .footer {
-  background-color: rgb(219, 229, 233);
-  padding: 20px;
+  display: grid;
+  grid-template-columns: auto auto;
+  justify-content: space-between;
+  align-content: center;
+  background-color: rgb(0, 0, 0);
+  height: 80px;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
 }
 
-.github, .rss {
-  text-decoration: none;
-  line-height: 45px;
-  color: #000000;
-}
-.rss {
-  height: 45px;
-  padding: 0 20px;
-  text-shadow: 10px;
-  transition: .3s;
-  font-weight: 700;
+.footer div {
+  text-align: center;
+  font-size: 18px;
 }
