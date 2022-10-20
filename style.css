@@ -19,7 +19,7 @@ body {
   font-size: 18px;
   font-weight: 500;
   letter-spacing: 0.5px;
-  background-image: url(./assets/img/bg.jpeg);
+  background-image: url(../assets/img/bg.jpeg);
   background-size: cover;
   position: relative;
 }
