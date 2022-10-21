@@ -69,6 +69,39 @@ body {
   padding: 10px;
 }
 
+.sign-item {
+background: rgb(37, 37, 255);
+border-radius: 10px;
+}
+
+.sign-item:hover{
+  background: rgb(37, 37, 255, 0.5);
+  transition: 0.5s;
+}
+
+.login-link {
+  padding: 10px 20px;
+  text-shadow: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
+.login-link:hover {
+  box-shadow: 0 0 0 1px rgb(255, 255, 255);
+  border-radius: 10px;
+}
+
+.sign-link {
+  padding: 10px;
+  text-shadow: 10px;
+  font-weight: 500;
+  text-transform: uppercase;
+  text-decoration: none;
+  color: white;
+}
+
 .nav-link {
   padding: 10px;
   text-shadow: 10px;
@@ -86,8 +119,9 @@ body {
 
 .container {
   display: grid;
-  grid-template-rows: 15% 15% auto;
+  grid-template-rows: 15% 15% 13%;
   justify-content: center;
+  width: 100%;
 }
 
 p {
@@ -105,8 +139,8 @@ h4,
 h5,
 ul {
   font-family: "Poppins", sans-serif;
-margin: 10px;
-padding: 0;
+  margin: 10px;
+  padding: 0;
 }
 
 h1 {
@@ -123,30 +157,50 @@ h4 {
 
 .search-form {
   background-color: #fff;
-  padding: 40px 20px;
-  border-radius: 20px;
-  display: block;
+  border-radius: 10px;
+  display: flex;
   text-align: center;
-  height: 13vh;
-  width: 90vw;
+  margin: 0 20px;
 }
 
 .search-row {
   display: flex;
-  justify-content: space-between;
+  margin: auto;
+  padding: 0 20px;
 }
 
-.button-style, .search-button {
-height: 36px;
-font-size: 17px;
-font-family: "Poppins", sans-serif;
-background-color: #fff;
+.button-style,
+.search-button {
+  font-size: 17px;
+  font-family: "Poppins", sans-serif;
+  background-color: #fff;
+  border-radius: 6px;
+  border: 1px solid;
+  outline: none;
+  padding: 5px 20px 5px 10px;
+}
+
+.search-button-div {
+padding: 0 10px;
+}
+
+ .search-button {
+  font-size: 17px;
+  cursor: pointer;
+  color: white;
+  padding: 4px 19px;
+  background: rgb(37, 37, 255);
+}
+
+.search-button:hover {
+  background: rgb(37, 37, 255, 0.5);
+  transition: 0.5s;
 }
 
 .footer {
   background-color: rgb(0, 0, 0);
   min-width: max-content;
-  height: 170px;
+  height: 190px;
   position: absolute;
   left: 0;
   bottom: 0;
@@ -154,9 +208,9 @@ background-color: #fff;
   font-size: 0.9em;
 }
 
-.footer a{
+.footer a {
   font-size: 14px;
-    line-height: 2.4em;
+  line-height: 2.4em;
 }
 
 .footer_container {
@@ -166,15 +220,24 @@ background-color: #fff;
 }
 
 .quick-links-list {
-display: flex;
+  display: flex;
+  padding-top: 15px;
 }
 
 .footer_container h2 {
-margin: 10px 10px;
+  margin: 10px 10px;
 }
 
 footer div ul li {
-list-style-type: none;
+  list-style-type: none;
 }
 
+.footer_logo {
+width: 20px;
+height: 30px;
+padding-top: 15px;
+}
 
+.media-list > li {
+
+}

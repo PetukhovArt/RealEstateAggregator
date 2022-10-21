@@ -7,6 +7,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="index.js">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="assets/img/favicon.ico">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -21,15 +22,14 @@
         <div class="logo">
                 <img class="header-logo" src="../assets/svg/logo.png" alt="logo.png">
         </div>
-
             <nav class="nav">
                 <ul class="nav-list">
                     <li class="nav-item"><a href="#" class="nav-link">Rent</a> </li>
                     <li class="nav-item"><a href="#" class="nav-link">Buy</a> </li>
                     <li class="nav-item"><a href="#" class="nav-link">Sell</a> </li>
                     <li class="nav-item"><a href="#" class="nav-link">List Your Property</a> </li>
-                    <li class="nav-item login"><a href="#" class="nav-link">Login</a> </li>
-                    <li class="nav-item sign-up"><a href="#" class="nav-link">Sign Up</a> </li>
+                    <li class="nav-item"><a href="#" class="login-link">Login</a> </li>
+                    <li class="nav-item sign-item"><a href="#" class="sign-link">Sign Up</a> </li>
                 </ul>
             </nav>
     </header>
@@ -43,43 +43,63 @@
     <div class="search-button-div">
         <select class="button-style" required="required">
             <option value="">Seller</option>
-            <option value="Private" >Private</option>
-            <option value="Developer">Developer</option>
-            <option value="Agency">Agency</option>
+            <option value="1" >Private</option>
+            <option value="2">Developer</option>
+            <option value="3">Agency</option>
           </select>
     </div>
     <div class="search-button-div">
         <select class="button-style" required="required">
             <option value="">City</option>
+            <option value="1">Perm</option>
+            <option value="2">Ekaterinburg</option>
+            <option value="3">Moscow</option>
           </select>
     </div>
     <div class="search-button-div">
         <select class="button-style" required="required">
             <option value="">Area</option>
+            <option value="1">Мотовилихинский</option>
+            <option value="2">Дзержинский</option>
+            <option value="3">Свердловский</option>
+            <option value="6">Индустриальный</option>
+            <option value="7">Ленинский</option>
           </select>
     </div>
     <div class="search-button-div">
         <select class="button-style" required="required">
-            <option value="">Construction Year</option>
+            <option value="">Year</option>
+            <option value="1">up to 1980</option>
+            <option value="2">1981 - 2000</option>
+            <option value="3">from 2001</option>
           </select>
     </div>
     <div class="search-button-div">
         <select class="button-style" required="required">
-            <option value="">Rooms number</option>
+            <option value="">Rooms</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
           </select>
     </div>
     <div class="search-button-div">
         <select class="button-style" required="required">
             <option value="">Price</option>
+            <option value="1">up to 3,1 mln</option>
+            <option value="2">up to 2,2 mln</option>
+            <option value="3">up to 3,2 mln</option>
+            <option value="4">up to 3,5 mln</option>
+            <option value="5">up to 4,3 mln</option>
           </select>
     </div>
     <div class="search-button-div">
-        <select class="button-style" required="required">
-            <option value="">????</option>
+        <select class="button-style">
+            <option value="">Advanced</option>
           </select>
     </div>
     <div class="search-button-div">
-        <input class="search-button" type="submit" value="Search">
+        <button class="search-button" type="submit" value="Search">
+            <i class="fa fa-search"></i>
+             </button>
     </div>
 </div>
     </form>
@@ -94,13 +114,16 @@
 <h2>Social Media</h2>
     <ul class="media-list">
 <li>
-    <a href="#" target="_blank" class="nav-link">Telegram</a>
+    <img class="footer_logo" src="./assets/svg/tg_logo.svg" alt="Telegram">
+    <a href="#" target="_blank" class="nav-link social-link">Telegram</a>
 </li>
 <li>
-    <a href="#" target="_blank" class="nav-link">Instagram</a>
+    <img class="footer_logo" src="./assets/svg/inst_logo.svg" alt="Instagram">
+    <a href="#" target="_blank" class="nav-link social-link">Instagram</a>
 </li>
 <li>
-    <a href="#" target="_blank" class="nav-link">Youtube</a>
+    <img class="footer_logo" src="./assets/svg/youtube_logo.svg" alt="Youtube">
+    <a href="#" target="_blank" class="nav-link social-link">Youtube</a>
 </li>
     </ul>
 </div>
@@ -130,7 +153,6 @@
         </li>
         </ul>
 </div>
-
         </div>
 </footer>
 
